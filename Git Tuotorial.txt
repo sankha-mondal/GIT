@@ -1,0 +1,107 @@
+                                       =🎀 Git Tutorial 🎀=
+                                         -----------------------------
+🎗🎀🎡🎫🎨🖼🕶🎏🎐🎑🧧🧶🧢💎🎯🏆🕹🎰🎲🔮🧿🧩🥊🪀♟♠♣♥♦
+🔔🎵🗝🛠🛢🧲🧰🏹⚔🖥🧮🖱📽📺🔍📚📙📜🧾📥📩🖌🖍✒📌📍📉📊⌚
+⏲📮🗳📦💰🔖🗞📰💡🎃✨🎆🎈🍳🥂🥢🍑🏍🛩🚁🚀🛰🛸🚨⚓🌌🪐🌍
+🏟🏝♨❄🌠☄🔥💈⛲🎌🗽🌅🗺✈🛹💫🕳♾🔱⚜☢⚠🔰⬅➡⬆⬇🔴🟠👽
+🤖🐱‍🚀➡🔜➖💱➰↪↩🔀🈂▶⏸⏭⏮⏩⏪🔽 
+
+📙 git init ---> creates local repository: 🎯 
+      👉🏻 git config --list   --->  Global(available for all the projects on the system) 
+
+📙 Most important config parameters to be set at global level : 🎯
+      👉🏻  git config --global user.name <username>
+      👉🏻  git config --global user.email <email ID>
+
+📙 Check local <username> & <email ID>: 🎯
+      👉🏻  git config --global user.name  ↩
+      👉🏻  git config --global user.email  ↩      
+
+📙 Edit local <username> & <email ID>: 🎯
+      👉🏻  git config --global --edit  ↩
+ 	🛸 [user]
+                      email = sankha_mondal@persistent.com
+                      name = SANKHA SUBHRA MONDAL
+	🛸 After editing is done to exit press
+	        Esc ▶ : ▶ w ▶ q ▶ ↩
+
+📙 To Check current position: 🎯
+     👉🏻  git status
+	🛸On branch dev
+	          Untracked files:
+  	          (use "git add <file>..." to include in what will be committed)
+       		          File1.txt
+       nothing added to commit but untracked files present (use "git add" to track)
+
+📙 Add any <file> to Staging area/ Caching area/ Index area: 🎯
+      👉🏻  git add <file> ↩
+	🛸 Automaticlly added to Staging area
+
+📙 Add ALL <file> to Staging area/ Caching area/ Index area: 🎯
+      👉🏻  git add . ↩
+	🛸 Automaticlly ALL files added to Staging area
+
+📙 updates the commit msg for leatest commiot: 🎯
+    👉🏻  git commit --amend -m "msg"
+
+📙 Remove <file> from Staging area/ Caching area/ Index area: 🎯
+      👉🏻  git rm --cached <file> ↩
+	🛸 rm <file>'
+
+📙 Commit(save) the change to Local Reposatory: 🎯
+      👉🏻  git commit -m "valid-msg"
+	🛸 git commit -m "File commited successfully"
+
+📙 To add <file> to Staging area and Commit(save) the change 
+  to Local Reposatory TOGETHER 🧲 (git add + git commit): 🎯
+      👉🏻  git commit -a -m "valid-msg"
+	 git commit -m "File added and commited successfully"
+
+📙 To Check the version History of Project : 🎯
+      👉🏻  git log
+	🛸 commit 84fcd4559b92d2b5871df05df9466e26380f2f04 (HEAD -> master)
+	Author: SANKHA SUBHRA MONDAL <sankha_mondal@persistent.com>
+	Date:   Mon Feb 7 14:04:39 2022 +0530
+
+    	File2 added
+
+	🛸 commit 296c7131e042db4ba0e2c54adebb181555f0c6d0
+	Author: SANKHA SUBHRA MONDAL <iamsankha20@gmail.com>
+	Date:   Fri Jan 21 16:54:29 2022 +0530
+
+    	added message in Test.java
+     👉🏻  git log --online
+     👉🏻  git log -2
+     👉🏻  git log -p   --> changes done for every commit
+     👉🏻  git log -2   --> changes done for latest 2 commit.
+     👉🏻  git log --grep="Initial"
+     👉🏻  git log --author="authorname"
+
+
+📙 To get DIFFERENCE between Stages(WD, SA, Local Repo) of file: 🎯 
+      👉🏻  git diff   --> difference between WD and SA
+      👉🏻  git diff  HEAD  --> difference between WD and LR
+	
+                                                  WD                            SA                            LR
+	                        ----------------------------------------------------------------------------
+🎆Change in WD -->      Change1
+        🛸  git diff   ↩                                                                                                 ---> Change1
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
+🧾 SHA - Secure Hash Algorithm - SHA-1
+Fixed length hash = SHA(input data)  --> data can be in bits/bytes/GBs/TBs
+
+Properties SHA - 
+🧩 Deterministic - For same input we always get same output, regardless of the OS, 	            environment.
+🧩 Output should be fixed length.
+🧩 Avalanche Effect - For any minor change, entire hash value changes.
+🧩 Unique Value - Any 2 inputs should have same hash value
+--------------------------------------------------------------------------------------------------
+
+
+
+
